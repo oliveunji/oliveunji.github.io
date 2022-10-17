@@ -5,7 +5,7 @@ parent: Trees and Graphs
 nav_order: 1
 ---
 
-# LeetCode_127_Word_Ladder
+## LeetCode_127_Word_Ladder
 
 {: .no_toc }
 
