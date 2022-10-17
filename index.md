@@ -8,7 +8,7 @@ permalink: /
 ## Welcome to Eunji's Dev Blog
 
 ### Software Engineer who loves painting
-커피, 끄적거림, 기록하기를 좋아하는 감성 엔지니어
+민화를 취미로 그리는 소프트웨어 개발자 🐯
 {: .fs-3 .pt-1 .pb-5 }
 
 - 🌐 Blog : [oliveunji.github.io](https://oliveunji.github.io)
