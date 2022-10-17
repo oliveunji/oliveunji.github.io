@@ -8,21 +8,13 @@ permalink: /
 ## Welcome to Eunji's Dev Blog
 
 ### Software Engineer who loves painting
+
 민화를 취미로 그리는 소프트웨어 개발자 🐯
 {: .fs-3 .pt-1 .pb-5 }
 
 - 🌐 Blog : [oliveunji.github.io](https://oliveunji.github.io)
 - 👩‍💻 GitHub : [github.com/oliveunji](https://github.com/oliveunji)
 - 💌 E-mail : [eunjikim2u@gmail.com](mailto:eunjikim2u@gmail.com)
-
----
-
-#### Table of Contents
-
-* [Tech Stack](/tech-stack)
-* [Technical Writing](/technical-writing)
-* [Tech Interview](/tech-interview)
-* [Study Guide](/study-guide)
 
 ---
 
@@ -37,5 +29,5 @@ permalink: /
 
 ##### Certifications
 
-- AZ-900 Azure Fundamentals	<sub>September 10, 2020</sub>
+- AZ-900 Azure Fundamentals <sub>September 10, 2020</sub>
 {: .fs-3 }
