@@ -28,9 +28,8 @@ permalink: /
 
 ##### Technical Skills
 
-- Strong: Vue.js, Javascript, JQuery, HTML5, CSS3, Bootstrap
-- Knowledgeable: Azure, API, Node.js, Ansible, Python, Terraform, Datadog, APM
-- IDE & Source Control: VS Code, Eclipse, Git, Postman
+- Knowledgeable: Azure DevOps, API, Node.js, Python
+- IDE & Source Control: VS Code, Git, Postman
 - Graphic & Productivity Tools: Notion, Slack, Wiki, Jira etc.,
 {: .fs-3 }
 
