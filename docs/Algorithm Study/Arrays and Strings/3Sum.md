@@ -59,7 +59,8 @@ class Solution:
 ```
 
 ### 시간복잡도
-O(N)
+O(N^2)
+더 정확히 말하면 O(nlogn + n^2) 왜냐하면 sorting에 nlogn이 걸리지만, n^2이 월등히 큼으로 근사하면 O(n^2)
 
 ### 공간복잡도
-O(N)
+O(logn) ~ O(n), sorting 알고리즘의 구현에 따라 달라짐 
