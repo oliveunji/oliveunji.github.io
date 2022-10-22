@@ -18,30 +18,27 @@ permalink: /algorithm-study/dynamic-programming/longest-palindromic-substring
 - s consist of only digits and English letters.
 
 ### 풀이방법
-dp 결과를 저장할 min 저장용 변수와 max 저장용 변수를 따로 두고, result도 그때 그때 계산해서 업데이트 한다. 
+dp를 이용하여 i=0 부터 인덱스 마지막 값 까지 범위를 넓혀가며, 해당 인데스일때 palindrome이 어디까지 될 수 있는지 조사하고
+길이가 가장 긴 결과를 리턴한다. 
 
 ### 코드 
 ```python
 class Solution:
     def longestPalindrome(self, s):
-    res = ""
-    for i in xrange(len(s)):
-        # odd case, like "aba"
-        tmp = self.helper(s, i, i)
-        if len(tmp) > len(res):
-            res = tmp
-        # even case, like "abba"
-        tmp = self.helper(s, i, i+1)
-        if len(tmp) > len(res):
-            res = tmp
-    return res
- 
-  # get the longest palindrome, l, r are the middle indexes   
-  # from inner to outer
-  def helper(self, s, l, r):
-      while l >= 0 and r < len(s) and s[l] == s[r]:
-          l -= 1; r += 1
-      return s[l+1:r]
+        res = ""
+        for i in range(len(s)):        
+            odd  = self.palindromeAt(s, i, i)
+            even = self.palindromeAt(s, i, i+1)
+
+            res = max(res, odd, even, key=len)
+        return res
+
+    # starting at l,r expand outwards to find the biggest palindrome
+    def palindromeAt(self, s, l, r):    
+        while l >= 0 and r < len(s) and s[l] == s[r]:
+            l -= 1
+            r += 1
+        return s[l+1:r]
 ```
 
 ### 시간복잡도
