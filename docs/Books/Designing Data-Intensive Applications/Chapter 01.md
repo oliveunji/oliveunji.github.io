@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Chapter 01
-parent: Books
-Designing Data-Intensive Applications
+parent: Designing Data-Intensive Applications
 grand_parent: Books
 description: "Chapter 01"
 permalink: /books/designing-data-intensive-applications/chapter01
