@@ -2,7 +2,7 @@
 layout: default
 title: Coding Test Questions
 parent: Algorithm Study
-nav_order: -1
+nav_order: 10
 has_children: true
 description: "Coding Test Questions"
 permalink: /algorithm-study/coding-test-questions
