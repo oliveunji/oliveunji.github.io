@@ -59,6 +59,7 @@ let과 const가 개선한 부분
     - let 키워드로 선언한 변수는 **선언 단계와 초기화 단계가 분리되어 진행** 된다.
     - const 키워드는 **선언 단계와 초기화 단계가 동시에 진행** 된다. 
 
+참고한 블로그: https://www.howdy-mj.me/javascript/var-let-const
 
 2. Event Loop란
 3. Express 의 역할 
