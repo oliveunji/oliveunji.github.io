@@ -61,7 +61,15 @@ let과 const가 개선한 부분
 
 참고한 블로그: https://www.howdy-mj.me/javascript/var-let-const
 
-2. Event Loop란
+### 2. Event Loop란?
+JavaScript는 Single Thread 이다. 근데, Event Loop를 사용하면, Node.js가 non-blocking i/o를 가능하게 한다.
+뭔말이냐고? 다시 풀어서 설명하면, Single Thread라는게 길이 외길이어서, 엄청나게 느린놈이 길막하고 있으면 그다음 애가 앞으로 새치기 하거나 하지 못해서, 그 이후의 일들은 앞일이 다 끝날때까지 처리되지 못한다는 것이다. 
+근데, Event Loop 가 도입되면서, 엄청나게 느린 놈은 Event Loop에 의해서 빨리 빨리 처리할일 하고 난 후에 처리되는? 그런 마법같은 상황인것이다. 
+
+<img width="554" alt="image" src="https://user-images.githubusercontent.com/39396725/198592635-60db6794-02fc-486d-81b0-86017588fb53.png">
+
+참고영상: [https://www.youtube.com/watch?v=8aGhZQkoFbQ](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
 3. Express 의 역할 
 4. npm과 yarn 각각에 대한 설명 
 5. event-driven programming이란?
