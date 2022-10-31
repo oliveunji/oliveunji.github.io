@@ -94,7 +94,9 @@ Npm은 node package manager의 약자로, node에서 사용하는 각종 라이�
 
 ### 5. event-driven 아키텍쳐란?
 Event-driven 아키텍쳐는 이벤트를 생성하는 이벤트 생성자(event producer)와 이를 구독하는 이벤트 소비자(event consumer)로 구성된다.  
+
 ![image](https://user-images.githubusercontent.com/39396725/199005328-5ba0c4f7-c36e-4997-a88a-c4f73b62468d.png)
+
 이벤트는 실시간으로 전달되며 이벤트 소비자들은 이벤트가 일어나면 즉각 반응할 수 있다. 또한 이벤트 생성자는 소비자로부터 분리될 수 있고, 각 소비자들 또한 서로를 모른다. 
 이벤트 기반 아키텍쳐는 pub/sub 모델과 event stream 모델로 분리된다. 
 
