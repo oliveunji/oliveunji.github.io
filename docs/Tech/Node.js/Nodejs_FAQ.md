@@ -81,7 +81,15 @@ Express는 Node.js 개발자들에게 가장 유명한 **웹 프레임워크** �
 - 접속을 위한 포트나 응답 렌더링을 위한 템플릿 위치같은 공통 웹 어플리케이션 세팅을 한다.
 - 핸들링 파이프라인(reqest handling pipeline) 중 필요한 곳에 추가적인 미들웨어 처리 요청을 추가한다.
 
-4. npm과 yarn 각각에 대한 설명 
+### 4. npm과 yarn 각각에 대한 설명
+Npm은 node package manager의 약자로, node에서 사용하는 각종 라이브러리들을 편리하게 다운받고 버전관리, 의존성 관리등을 도와주는 도구이다.
+근데 어느날 혜성같이 등장한 yarn! 어떤 부분을 보충하기 위해 등장했을까?
+2016년, 페이스북은 구굴과 몇몇 다른 개발자들과 함께 npm이 가지고 있었던 일관성, 보안, 성능 문제들을 해결하기 위해 새로운 패키지 매니저를 만드려는 시도중이란 발표를 했다 -> 그것이 바로 yarn (classic)
+
+그 이후로도 npm 및 yarn classic의 근본적인 문제를 해결하기 위해 (flat하게 node modules를 관리하는 것, 성능 및 디스크 관리의 효율성) 때문에 yarn berry와 pnpm이 등장하였다.
+
+하지만 가장 범용적으로 쓰이고, 많은 개발 문서에 안내되어있는 package manager는 여전히 npm 이니 이제 막 node.js를 시작하는 개발자라면 npm 을 사용하는것이 나쁘지 않은 선택지라고 본다. 
+
 5. event-driven programming이란?
 6. Promise에 대해 설명
 7. node.js의 장단점
