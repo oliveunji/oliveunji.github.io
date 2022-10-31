@@ -90,6 +90,8 @@ Npm은 node package manager의 약자로, node에서 사용하는 각종 라이�
 
 하지만 가장 범용적으로 쓰이고, 많은 개발 문서에 안내되어있는 package manager는 여전히 npm 이니 이제 막 node.js를 시작하는 개발자라면 npm 을 사용하는것이 나쁘지 않은 선택지라고 본다. 
 
+참고한 블로그: https://yceffort.kr/2022/05/npm-vs-yarn-vs-pnpm
+
 5. event-driven programming이란?
 6. Promise에 대해 설명
 7. node.js의 장단점
