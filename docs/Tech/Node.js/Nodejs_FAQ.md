@@ -90,9 +90,33 @@ Npm은 node package manager의 약자로, node에서 사용하는 각종 라이�
 
 하지만 가장 범용적으로 쓰이고, 많은 개발 문서에 안내되어있는 package manager는 여전히 npm 이니 이제 막 node.js를 시작하는 개발자라면 npm 을 사용하는것이 나쁘지 않은 선택지라고 본다. 
 
-참고한 블로그: https://yceffort.kr/2022/05/npm-vs-yarn-vs-pnpm
+참고한 블로그: [https://yceffort.kr/2022/05/npm-vs-yarn-vs-pnpm](https://yceffort.kr/2022/05/npm-vs-yarn-vs-pnpm)
 
-5. event-driven programming이란?
+### 5. event-driven 아키텍쳐란?
+Event-driven 아키텍쳐는 이벤트를 생성하는 이벤트 생성자(event producer)와 이를 구독하는 이벤트 소비자(event consumer)로 구성된다.  
+![image](https://user-images.githubusercontent.com/39396725/199005328-5ba0c4f7-c36e-4997-a88a-c4f73b62468d.png)
+이벤트는 실시간으로 전달되며 이벤트 소비자들은 이벤트가 일어나면 즉각 반응할 수 있다. 또한 이벤트 생성자는 소비자로부터 분리될 수 있고, 각 소비자들 또한 서로를 모른다. 
+이벤트 기반 아키텍쳐는 pub/sub 모델과 event stream 모델로 분리된다. 
+
+#### 이 아키텍쳐는 다음과 같은 경우에 사용된다. 
+- 여러개의 하부 시스템이 같은 이벤트 처리해야 할때
+- 실시간 프로세싱 경우
+- 복잡한 이벤트 프로세싱 (ex 패턴 매칭 등)의 경우
+- IoT와 같은 많은 양의 데이터가 들어오는 경우
+
+#### 장점
+- Producer와 Consumer가 decouple됨
+- point-to-point 통합이 필요없음. (즉 새로운 consumer 추가가 용이)
+- consumer는 이벤트 받자마자 응답 가능
+- 확장이 용의, 분산이 쉬움
+- subsyste은 이벤트 스트림에 대해 독립적인 view 가질 수 있음
+
+#### 어려운점
+- 이벤트 deliver 보장
+- 이벤트가 순서대로 처리됨을 보장하거나, 딱 한번만 처리된 것을 보장하는 것이 어려움 
+
+참조한 링크: [https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
+
 6. Promise에 대해 설명
 7. node.js의 장단점
 8. 콜백지옥 해결방안에 대해 설명
