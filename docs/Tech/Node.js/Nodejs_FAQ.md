@@ -119,7 +119,41 @@ Event-driven 아키텍쳐는 이벤트를 생성하는 이벤트 생성자(event
 
 참조한 링크: [https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/event-driven)
 
-6. Promise에 대해 설명
+### 6. Promise에 대해 설명
+Promise란 JavaScript 비동기 처리에 사용되는 객체이다. 
+Promise는 다음과 같이 3가지 상태를 가진다. 
+- Pending(대기) : 비동기 처리 로직이 아직 완료되지 않은 상태
+- Fulfilled(이행) : 비동기 처리가 완료되어 프로미스가 결과 값을 반환해준 상태
+- Rejected(실패) : 비동기 처리가 실패하거나 오류가 발생한 상태
+
+<프로미스 사용 예제>
+```js
+function getData() {
+  return new Promise(function(resolve, reject) {
+    $.get('url 주소/products/1', function(response) {
+      if (response) {
+        resolve(response);
+      }
+      reject(new Error("Request is failed"));
+    });
+  });
+}
+
+// 위 $.get() 호출 결과에 따라 'response' 또는 'Error' 출력
+getData().then(function(data) {
+  console.log(data); // response 값 출력
+}).catch(function(err) {
+  console.error(err); // Error 출력
+});
+```
+
+#### Async/Await 과 Promise의 차이?
+Async/Await은 Promise의 Syntatic Sugar일 뿐이다. Async/Await으로 작성하면 비동기 요청을 동기? 처럼 보이게 작성할 수 있어서 코드에 대한 가독성이 좋아져서 코드 이해가 쉬워진다.  
+
+참고한 링크
+- [https://joshua1988.github.io/web-development/javascript/promise-for-beginners/](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
+- [https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises#async_and_await](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises#async_and_await)
+
 7. node.js의 장단점
 8. 콜백지옥 해결방안에 대해 설명
 9. Single Threaded Async란?
