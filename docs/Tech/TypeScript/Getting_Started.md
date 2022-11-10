@@ -56,3 +56,38 @@ tsc --strictNUllChecks test.ts
 let courseId : number | null;
 courseId!.toString();
 ```
+
+### Type Aliases
+```ts
+type CourseStatus = "draft" | "published" | "unpublished" | "archived";
+let courseStatus : CourseStatus = "draft" 
+```
+
+### TypeScript Interfaces
+같은 형태의 타입의 값을 여러번 생성하고 싶을떄 사용
+```ts
+interface Course {
+    title: string;
+    readonly substitle: string;
+    lessonsCount?: number;
+
+const course: Course{
+    title: "bootcamp",
+    subtitle: "learn fundamentals",
+    lessonsCount: 10 
+};
+
+course.title = "hello world"
+```
+
+### TypeScript Aliases vs Interfaces
+Interfaces를 사용하는 것을 추천. 
+대게 aliases를 사용하는 경우는 간단하게 union fixed type? 정할떄? 사용??
+Interfaces는 extend가 가능하다. 
+
+### TypeScript Type Assertions
+```ts
+const input = document. getElementById("input-field) as HTMLInputElement;
+
+```
+
