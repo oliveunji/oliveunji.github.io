@@ -91,3 +91,21 @@ const input = document. getElementById("input-field) as HTMLInputElement;
 
 ```
 
+### 익명함수와 일반 function의 차이
+다음의 함수의 결과물은
+<img width="659" alt="image" src="https://user-images.githubusercontent.com/39396725/201500547-c4a62b2f-1d11-4992-ac43-2c82334c2cde.png">
+Unkwon이 출력되지 않는다. 왜냐면 익명함수는 따로 private context를 생성하지 않기 때문.
+<img width="677" alt="image" src="https://user-images.githubusercontent.com/39396725/201500571-24b05dea-22ef-4ec2-92cd-02f9de8020ce.png">
+Unkwon이 출력된다. function 때문에 it's own private context를 생성하기 때문. 
+
+### Deep Copy vs Shallow Copy
+<img width="428" alt="image" src="https://user-images.githubusercontent.com/39396725/201500798-b5ac3e6d-4988-4188-9b71-b7297e09f513.png">
+다음 코드의 결과물은 newCourse의 lessonCount가 영향받지 않았을것이다. (Deep Copy 되었기 때문) 
+
+<img width="854" alt="image" src="https://user-images.githubusercontent.com/39396725/201500855-eadc2a07-7df5-4d36-8698-25f59b655883.png"> 
+이 경우는 Shallow copy이기 때문에 lessonCount가 100으로 바뀐다.
+
+위의 결과물은 다음의 결과물과 동일하다. (Spread operator 사용)
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/39396725/201500895-fb9ae2a9-ba97-4fb2-953d-18d7801a26e0.png">
+
+Deep Copy를 편하게 하고 싶으면 clone-deep과 같은 package를 사용하면 된다. 
