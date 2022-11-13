@@ -111,7 +111,6 @@ Unkwon이 출력된다. function 때문에 it's own private context를 생성하
 Deep Copy를 편하게 하고 싶으면 clone-deep과 같은 package를 사용하면 된다. 
 
 ### TypeScript 디버그 방법
-![image](https://user-images.githubusercontent.com/39396725/201502443-c5c2509d-c6a3-406a-a56d-be0ca9c30456.png)
-
 <img width="922" alt="image" src="https://user-images.githubusercontent.com/39396725/201502470-e6c9aaf9-314f-4bbc-ab44-a11202f79330.png">
-Source Map 사용하면 ts 파일로 
+Source Map 사용하면 ts 파일로 디버깅 가능하다. (--sourceMap)
+
