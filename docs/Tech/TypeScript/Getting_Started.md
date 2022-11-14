@@ -33,7 +33,17 @@ const title = course?.textFields?.title : "No title found"
 ### noImplictAny 옵션
 ```ts
 tsc --noImplicitAny 06-any-type.ts
-```
+
+### TypeScript Intersection Type
+두 인터페이스의 정의를 합쳐서(?) 정의한 새로운 타입
+<img width="495" alt="image" src="https://user-images.githubusercontent.com/39396725/201552107-be1b60d1-1840-4471-bdb6-ec49c855fbfd.png">
+
+### TypeScript에서 특정 파일만 컴파일 하고 싶을때 사용하는 옵션
+<img width="407" alt="image" src="https://user-images.githubusercontent.com/39396725/201552583-a2bbd24b-3772-46c9-aa0f-94165cc35685.png">
+이걸 패턴으로 지정하고 싶으면..
+<img width="308" alt="image" src="https://user-images.githubusercontent.com/39396725/201552850-a9cf2ff0-0ed9-46da-9367-01ef3a7dec85.png">
+
+
 
 ### Union TYpes
 ```ts
