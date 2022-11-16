@@ -159,7 +159,7 @@ Async/Await은 Promise의 Syntatic Sugar일 뿐이다. Async/Await으로 작성�
 9. Single Threaded Async란?
 10. 비동기 처리 Promise와 async/await의 차이?
 11. REST API 에 대해 설명
-12. OOP란?
+### 12. OOP란?
 객체지향 프로그래밍(Object Oriented Programming) 이란 컴퓨터 프로그래밍 패러다임중 하나로 프로그램을 명령어의 목록으로 보는 시각에서 벗어나 객체들의 모임으로 파악한다. 각각의 객체는 메세지를 주고받고 데이터를 처리할 수 있다. 
 
 객체지향 프로그래밍은 프로그램을 유연하고 변경이 쉽게 만들기 때문에 대규모 소프트웨어 개발에 많이 사용된다. 
