@@ -192,4 +192,8 @@ var obj1 = { address : "Seoul, Korea", getAddress: function(){
 console.log(this.address); } } var getAddress = obj1.getAddress; var obj2
 = { name:"Minji", getAddress }; obj2.getAddress();
 ```
-25. 
+25. Express란 무엇이고 왜 필요하며 대안은 무엇이 있는지 설명해주실 수 있을까요?
+26. npm 이란 무엇인지 설명해주실 수 있을까요?
+27. 웹 서버란 무엇인지 NGiNX와 Apache를 비교하여 설명해주실 수 있을까요?
+28. JWT란 무엇인지 설명해주실 수 있을까요?
+29. 트랜스파일러와 번들러에 대해 설명해주실 수 있을까요? 
