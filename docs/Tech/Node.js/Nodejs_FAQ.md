@@ -180,4 +180,16 @@ Async/Await은 Promise의 Syntatic Sugar일 뿐이다. Async/Await으로 작성�
 - this, arguments, super과 같은 own bindings를 가지지 않는다. 
 - constructor로 사용될 수 없다. 
 - yield를 사용할 수 없다. 
-20. 
+20. 38. ‘==’와 ‘===’ 연산자의 차이는 무엇인지 설명해주실 수 있을까요?
+21. 깊은 복사와 얕은 복사의 차이는 무엇이고 JS에서 각각을 구현하는 방법은 어떻게 되
+는지 설명해주실 수 있을까요?
+22. JS의 passed by value 와 passed by reference 에 대해 아는 만큼 설명해주실 수 있을
+까요?
+23. 고차 함수란 무엇인지 설명해주실 수 있을까요?
+24. 다음 함수의 결과의 예측과 근거를 설명해주실 수 있을까요?
+```js
+var obj1 = { address : "Seoul, Korea", getAddress: function(){
+console.log(this.address); } } var getAddress = obj1.getAddress; var obj2
+= { name:"Minji", getAddress }; obj2.getAddress();
+```
+25. 
