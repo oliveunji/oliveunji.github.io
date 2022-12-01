@@ -22,6 +22,8 @@ permalink: /algorithm-study/arrays-and-strings/rotate-image
 아... 어렵다. 제자리에서 배열 회전을 한다는게.. 인덱스 조작도 상당히 복잡하다. 
 일단 너무 모르겠어서 코드를 외워야겠다.. 
 
+<img width="761" alt="image" src="https://user-images.githubusercontent.com/39396725/205078682-7f3de3ff-d0fb-4b2a-99ed-f26b877793a2.png">
+
 ### 코드 
 ```python
 class Solution:
