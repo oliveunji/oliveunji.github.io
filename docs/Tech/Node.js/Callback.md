@@ -18,3 +18,93 @@ permalink: /tech/node-js/callback
 -  Promise 사용: resolve나 reject가 실행되기 전까지는 다음(then) 또는 오류구문(catch)로 넘어가지 않는다
 -  Generator 사용: Generator를 사용하면 Iterator가 반환되는데 Iterator는 next라는 메서드를 가지고 있어서, 이 next 메서드를 호출하면 generator 함수 내부에서 가장 먼저 등장하는 yield 함수 실행을 멈춤
 - async/await 사용: 비동기 작업을 수행하고자 하는 함수 앞에 async를 표기하고, 함수 내부에서 실질적인 비동기 작업이 필요한 위치마다 await 표기 하는 것만으로도 뒤의 내용 자동 promise 전환 
+
+[ Callback 만 사용 ]
+```js
+setTimeout(
+  function (name) {
+    var coffeeList = name;
+    console.log(coffeeList);
+
+    setTimeout(
+      function (name) {
+        coffeeList += ", " + name;
+        console.log(coffeeList);
+
+        setTimeout(
+          function (name) {
+            coffeeList += ", " + name;
+            console.log(coffeeList);
+
+            setTimeout(
+              function (name) {
+                coffeeList += ", " + name;
+                console.log(coffeeList);
+              },
+              500,
+              "카페라떼"
+            );
+          },
+          500,
+          "카페모카"
+        );
+      },
+      500,
+      "아메리카노"
+    );
+  },
+  500,
+  "에스프레소"
+);
+
+```
+
+[Promise 사용]
+```js
+var addCoffee = function (name) {
+  return function (prevName) {
+    return new Promise(function (resolve) {
+      setTimeout(function () {
+        var newName = prevName ? prevName + ", " + name : name;
+        console.log(newName);
+        resolve(newName);
+      }, 500);
+    });
+  };
+};
+
+addCoffee("에스프레소")()
+  .then(addCoffee("아메리카노"))
+  .then(addCoffee("카페모카"))
+  .then(addCoffee("카페라떼"));
+
+```
+
+[ async / await 사용 ]
+```js
+var addCoffee = function (name) {
+  return new Promise(function (resolve) {
+    setTimeout(function () {
+      resolve(name);
+    }, 500);
+  });
+};
+
+var coffeeMaker = async function () {
+  var coffeeList = "";
+  var _addCoffee = async function (name) {
+    coffeeList += (coffeeList ? ", " : "") + (await addCoffee(name));
+  };
+
+  await _addCoffee("에스프레소");
+  console.log(coffeeList);
+  await _addCoffee("아메리카노");
+  console.log(coffeeList);
+  await _addCoffee("카페모카");
+  console.log(coffeeList);
+  await _addCoffee("카페라떼");
+  console.log(coffeeList);
+};
+coffeeMaker();
+
+```
