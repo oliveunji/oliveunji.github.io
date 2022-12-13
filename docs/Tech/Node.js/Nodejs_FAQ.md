@@ -219,3 +219,20 @@ console.log(this.address); } } var getAddress = obj1.getAddress; var obj2
 - sass를 CSS로 변환 등등..
 
 ES6+나 JSX를 변환시키는 트랜스파일러로는 바벨(Babel)이 있으며 타입스크립트를 변환시키는 도구로는 타입스크립트 트랜스파일러가 있다. 보통 모듈 번들러에 트랜스파일러를 추가해서 사용하는 방식을 사용한다.
+ 
+30. `map`과 `forEach`차이?
+  ```js
+  let arr = [1, 2, 3, 4, 5];
+  let doub = arr.forEach((num, index) => {
+      return arr[index] = num * num;
+  });
+  console.log(doub);
+
+  let doubled = arr.map(num => {
+      return num * num;
+  });
+  console.log(doubled);
+  ```
+  As seen from the code above, both methods call the provided function once for each array element, however, map utilizies return values, whereas, forEach loop     discards return values.
+
+This question is mostly asked as follows in senior level interviews: Describe the main difference between the .forEach() loop and .map() methods and why you would pick one over the other?
