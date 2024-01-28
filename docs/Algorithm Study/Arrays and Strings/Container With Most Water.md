@@ -43,6 +43,25 @@ class Solution:
         return result                         
 ```
 
+```kotlin
+class Solution {
+    fun maxArea(height: IntArray): Int {
+        val N = height.size
+        var i = 0
+        var j = N - 1
+        var result = 0
+
+        while (i < j) {
+            val curArea = (j-i) * minOf(height[i], height[j])
+            result = maxOf(result, curArea)
+            if(height[i] < height[j]){
+                i += 1
+            } else {
+                j -= 1
+            }
+        }
+```
+
 ### 시간복잡도
 O(N)
 
