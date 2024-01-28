@@ -12,4 +12,6 @@
 - 기술 개념에는 기술 이름이 적합한 선택이다
 - 의미가 분명한 경우 짧은 이름이 긴 이름보다 좋다
 
+![image](https://github.com/oliveunji/oliveunji.github.io/assets/39396725/089abc81-271b-4109-8e75-df12ae97e2e9)
+
 #노개북 #노마드코더 #개발자북클럽
