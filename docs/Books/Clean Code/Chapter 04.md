@@ -32,4 +32,9 @@
 - 모호한 관계: 주석과 주석이 설명하는 코드는 둘 사이 관계가 명백해야 한다
 - 함수 헤더
 
+## 다른 사람의 TIL 
+- https://velog.io/@lucki/%EB%85%B8%EA%B0%9C%EB%B6%81-%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C-TIL-4%EC%9E%A5.-%EC%A3%BC%EC%84%9D
+- https://ujaa.tistory.com/11
+- https://caring-tick-99e.notion.site/3-6ed2330b406b4c49a4a4d29ef5dac23d
+
 #노개북 #노마드코더 #개발자북클럽
