@@ -1,4 +1,13 @@
-# 의미있는 이름
+---
+layout: default
+title: Chapter 02
+parent: Clean Code
+grand_parent: Books
+description: "Chapter 02"
+permalink: /books/clean-code/chapter-02
+---
+
+# Chapter 02. 의미있는 이름
 - 의도를 분명히 밝혀라
 - 코드에 그릇된 단서를 남기지 마라
 - 유사한 개념은 유사한 표기법을 사용한다. (일관성)
