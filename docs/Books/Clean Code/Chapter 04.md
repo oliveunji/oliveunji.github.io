@@ -1,3 +1,12 @@
+---
+layout: default
+title: Chapter 04
+parent: Clean Code
+grand_parent: Books
+description: "Chapter 04"
+permalink: /books/clean-code/chapter-04
+---
+
 # 4. 주석
 주석은 기껏해야 필요 악이나. 주석은 너무 자주 거짓말을 하기 때문이다 (코드와 동떨어지기 쉬워서)
 부정확한 주석은 아에 없는 주석보다 훨씬 더 나쁘며, 진실은 코드에만 존재한다.
