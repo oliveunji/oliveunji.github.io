@@ -1,3 +1,12 @@
+---
+layout: default
+title: Chapter 01
+parent: Clean Code
+grand_parent: Books
+description: "Chapter 01"
+permalink: /books/clean-code/chapter-01
+---
+
 ## 0. 추천사 + 들어가면서
 ### 책에서 기억하고 싶은 내용
 - 소프트웨어는 80% 이상이 유지보수다.
