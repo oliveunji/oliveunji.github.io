@@ -1,3 +1,12 @@
+---
+layout: default
+title: Chapter 03
+parent: Clean Code
+grand_parent: Books
+description: "Chapter 03"
+permalink: /books/clean-code/chapter-03
+---
+
 # 3. 함수
 
 - 작게 만들어라: 함수를 만드는 첫번째, 두번째 규칙도 작게 만드는 것 이다. 각 함수가 이야기 하나를 표현한다.
