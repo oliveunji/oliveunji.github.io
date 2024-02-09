@@ -43,7 +43,7 @@ TEMPLATE METHOD 패턴을 사용하면 중복을 제거할 수 있다.
 표현력을 높이고 간결하게 정리하자. DSL을 만들자 
 
 ## 북틸
-https://nomadcoders.co/community/thread/9299
-https://dongpark.notion.site/9-23815f9364134cc9b40c52c6dc2328c0
+- https://nomadcoders.co/community/thread/9299
+- https://dongpark.notion.site/9-23815f9364134cc9b40c52c6dc2328c0
 
 #노개북 #노마드코더 #개발자북클럽
